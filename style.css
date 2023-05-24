@@ -1,0 +1,252 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior:smooth ;
+}
+.logo{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 26%;
+    border-radius: 22px;
+    border: 3px solid white;
+    margin: 5px;
+}
+.navbar{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: sticky;
+   top: 0;
+   cursor: pointer;
+   /* height: 447px; */
+}
+.nav-list{
+    width: 70%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color: gray;
+}
+.rightnav{
+     /* background-color: greenyellow; */
+     width: 30%;
+     /* text-align: right; */
+     padding: 0px,23px;
+     margin: auto;
+}
+#search{
+    width: ;
+    padding: 5px;
+    font-size: 17px;
+    border: gray;
+    border-radius: 9px;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url(http://www.shainblumphoto.com/wp-content/uploads/2016/02/dubai_1.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstsection{
+    height: 100vh;
+}
+.box-main{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   max-width: 50%;
+   margin: auto;
+   height: 73%;
+}
+.firsthalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.secondhalf{
+   width: 30%; 
+}
+.secondhalf img{
+    width: 70%;
+    border: white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+.text-big{
+    font-size: 32px;
+    /* text-align: center; */
+}
+.text-small{
+    font-size: 17px;
+    /* text-align: center; */
+}
+.btn{
+    margin: 8px 0px;
+    padding: 7px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 12px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-family:'Ubuntu',sans-serif;
+    font-size: 20px;
+}
+.btn-sm{
+    padding: 5px 10px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.btn-dark{
+    color: black;
+    border: 2px solid gray;
+}
+.Section{
+    margin: auto;
+    /* height: 400px; */
+    /* justify-content: space-evenly; */
+    align-items: center;
+    max-width: 65%;
+    display: flex;
+    font-family: 'Ubuntu',sans-serif;
+    margin-top: 50px;
+    padding: 10px;
+    
+}
+.section-left{
+    margin: auto;
+    height: 500px;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 65%;
+    display: flex;
+    /* flex-direction: row-reverse; */
+   margin-left:20%;
+  
+}
+
+.para{
+    padding: 0px 85px;
+    margin-left: 10%;
+}
+.thambnail{
+    padding-left: 30px;
+    margin-left: 10px;
+}
+.sectionSubTag{
+  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact{
+    height: 733px;
+    background-color: rgb(252, 225, 229);
+}
+.text-center{
+     text-align: center;
+     padding-top: 10px;
+     font-family: 'Ubuntu',sans-serif;
+     font-size: 35px;
+}
+.form{
+    max-width: 62%;
+    margin:20px auto;
+    
+}
+.form-input{
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    margin: 14px 0px;
+    padding: 1px 2px;
+}
+.text-footer{
+    text-align: center;
+     padding: 30px 0px;
+     font-family: 'Ubuntu',sans-serif;
+     justify-content: center;
+     color: white;
+     
+}
+.burger{
+    position: absolute;
+    display: none;
+    right: 5%;
+    top: 15px;
+    cursor: pointer;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    margin: 5px 3px;
+    height: 4px;
+}
+
+@media only screen and (max-width: 1140px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.7% case-out;
+        height: 447px;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    .box-min{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    #search{
+        width: 100%;
+    }  
+    .burger{
+    
+        display: block;
+    
+    }  
+    .h-nav-resp{
+        height: 71px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .Section{
+        flex-direction: column-reverse;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .paras{
+        padding: 0px;
+    }
+    
+}
